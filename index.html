@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinnacle Tax & Accounting Solutions</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content { position: relative; z-index: 2; }
+
+    /* Service Cards */
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+  <style>
+  /* Prevent horizontal scroll on mobile */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Make hero section mobile friendly */
+  .hero {
+    height: 100vh;
+    min-height: 500px; /* ensures smaller devices don’t crop */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Chart containers responsive */
+  canvas {
+    max-width: 100% !important;
+  }
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Pinnacle Tax</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="chooseus.html">Why Choose Us</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex">
+    <div class="hero-content animate__animated animate__fadeIn">
+      <h1 class="display-4 fw-bold">At the Peak of Financial Excellence</h1>
+      <p class="lead">Trusted Tax, Accounting & Compliance Services — Delivered with Precision and Integrity.</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get a Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-5 container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 d-flex align-items-center" data-aos="fade-left">
+        <div>
+          <h2>About Us</h2>
+          <p>At Pinnacle Tax & Accounting Solutions, we specialize in helping individuals and businesses stay compliant, save time, and focus on growth. Our team of tax specialists, accountants, and legal experts bring years of experience to ensure your financial affairs are handled with accuracy and care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card service-card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-file-invoice-dollar fa-2x mb-3 text-primary"></i>
+              <h5>Income Tax Return Filing</h5>
+              <p>For Individuals & Companies</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card service-card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-receipt fa-2x mb-3 text-success"></i>
+              <h5>Sales Tax Return Filing</h5>
+              <p>Monthly compliance & submission</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card service-card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-book fa-2x mb-3 text-warning"></i>
+              <h5>Bookkeeping Services</h5>
+              <p>Maintain records in compliance with law</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-5 container">
+    <h2 class="text-center mb-4">Why Choose Us</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-3" data-aos="fade-up">
+        <i class="fa-solid fa-user-tie fa-2x text-primary"></i>
+        <p>Expert team with proven track record</p>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-scale-balanced fa-2x text-success"></i>
+        <p>Compliance with local regulations</p>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-coins fa-2x text-warning"></i>
+        <p>Transparent pricing — no hidden fees</p>
+      </div>
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-clock fa-2x text-danger"></i>
+        <p>On-time service, every time</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Graphs and Charts -->
+  <section id="charts" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Financial Insights</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <canvas id="taxChart"></canvas>
+        </div>
+        <div class="col-md-6 mb-4">
+          <canvas id="growthChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <h5>📞 Call Us Today: 03XX-XXXXXXX</h5>
+        <h5>📧 info@pinnacletax.pk</h5>
+        <h5>📍 Your Office Address</h5>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <form class="shadow p-4 rounded bg-light">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pinnacle Tax & Accounting Solutions. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Tax Chart
+    new Chart(document.getElementById('taxChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Income Tax', 'Sales Tax', 'Withholding'],
+        datasets: [{
+          label: 'Returns Filed',
+          data: [120, 90, 60],
+          backgroundColor: ['#007bff', '#28a745', '#ffc107']
+        }]
+      }
+    });
+
+    // Growth Chart
+    new Chart(document.getElementById('growthChart'), {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [{
+          label: 'Client Growth',
+          data: [20, 40, 70, 100, 150],
+          borderColor: '#dc3545',
+          fill: false
+        }]
+      }
+    });
+  </script>
+  <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Pinnacle Tax & Accounting Solutions</h5>
+        <p>
+          Your trusted partner in tax consultancy, business registration, and accounting solutions.  
+          We simplify finances, so you can focus on growth.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="why-choose-us.html" class="text-light text-decoration-none">Why Choose Us</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p>📍 Saddar, Rawalpindi, Pakistan</p>
+        <p>📞 03XX-XXXXXXX</p>
+        <p>📧 info@pinnacletax.pk</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Bottom -->
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Pinnacle Tax & Accounting Solutions. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>

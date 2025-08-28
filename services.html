@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Background */
+    .services-header {
+      background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      position: relative;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .services-header::after {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,0.55);
+    }
+    .services-header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    /* Service Cards */
+    .service-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    }
+    .service-card i {
+      font-size: 40px;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+    /* Reviews */
+    .review-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+    }
+    .review-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    .stars {
+      color: #ffc107;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pinnacle Tax</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="chooseus.html">Why Choose Us</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <section class="services-header">
+    <h1 data-aos="zoom-in">Our Professional Services</h1>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What We Offer</h2>
+        <p class="text-muted">Comprehensive tax, accounting, and payroll services tailored for individuals & businesses.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <h5>Income Tax Return Filing</h5>
+            <p>Professional filing services for individuals & companies, ensuring compliance and accuracy.</p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <i class="fa-solid fa-receipt"></i>
+            <h5>Sales Tax Return Filing</h5>
+            <p>Monthly compliance, preparation, and submission of sales tax returns.</p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h5>Withholding Statements</h5>
+            <p>Accurate and timely filing of withholding tax statements as per regulations.</p>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <i class="fa-solid fa-book"></i>
+            <h5>Bookkeeping Services</h5>
+            <p>Maintain proper financial records in compliance with legal and audit standards.</p>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h5>Accounting Solutions</h5>
+            <p>Preparation of financial statements, management reports, and analytics.</p>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <i class="fa-solid fa-users"></i>
+            <h5>Payroll & Salary Sheets</h5>
+            <p>Automated and hassle-free employee payroll management with accuracy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Feedback Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">What Our Clients Say</h2>
+        <p class="text-muted">Real feedback from businesses and individuals we’ve worked with.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client">
+            <h6>John Smith</h6>
+            <p class="small text-muted">CEO, TechCorp</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>"Their accounting team has made our compliance smooth and stress-free. Highly recommend!"</p>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/60.jpg" alt="Client">
+            <h6>Emily Johnson</h6>
+            <p class="small text-muted">Small Business Owner</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"They manage all my tax filings on time. Very professional and reliable team.Fully Satisfied with their work"</p>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+            <h6>Michael Brown</h6>
+            <p class="small text-muted">Finance Manager</p>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>"Excellent bookkeeping services. Their reports help us take better business decisions."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feedback Form Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Give Us Your Feedback</h2>
+    <p class="text-center text-muted mb-5">Your opinion matters! Please share your feedback below.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form class="p-4 border rounded bg-white shadow-sm">
+          <div class="mb-3">
+            <label for="clientName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="clientName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="clientCompany" class="form-label">Company (optional)</label>
+            <input type="text" class="form-control" id="clientCompany" placeholder="Enter your company name">
+          </div>
+
+          <div class="mb-3">
+            <label for="serviceUsed" class="form-label">Service Used</label>
+            <select class="form-select" id="serviceUsed" required>
+              <option value="">-- Select a Service --</option>
+              <option>Income Tax Return Filing</option>
+              <option>Sales Tax Return Filing</option>
+              <option>Withholding Statements</option>
+              <option>Bookkeeping Services</option>
+              <option>Accounting Solutions</option>
+              <option>Payroll & Salary Sheets</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="feedbackText" class="form-label">Your Feedback</label>
+            <textarea class="form-control" id="feedbackText" rows="4" placeholder="Write your feedback here..." required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Rating</label>
+            <select class="form-select" id="rating" required>
+              <option value="">-- Select Rating --</option>
+              <option>⭐⭐⭐⭐⭐ Excellent</option>
+              <option>⭐⭐⭐⭐ Very Good</option>
+              <option>⭐⭐⭐ Good</option>
+              <option>⭐⭐ Fair</option>
+              <option>⭐ Poor</option>
+            </select>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 My Website. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Pinnacle Tax & Accounting Solutions</h5>
+        <p>
+          Your trusted partner in tax consultancy, business registration, and accounting solutions.  
+          We simplify finances, so you can focus on growth.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="why-choose-us.html" class="text-light text-decoration-none">Why Choose Us</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p>📍 Saddar, Rawalpindi, Pakistan</p>
+        <p>📞 03XX-XXXXXXX</p>
+        <p>📧 info@pinnacletax.pk</p>
+        <div>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Bottom -->
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Pinnacle Tax & Accounting Solutions. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+</html>
